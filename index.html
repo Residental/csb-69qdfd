@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="app.css" />
+    <script src="main.js" defer></script>
+    <title>Budget Tracker</title>
+  </head>
+  <body>
+    <h1>Budget Tracker</h1>
+
+    <form id="add-income-form">
+      <input
+        type="text"
+        id="income-description"
+        placeholder="Income Description"
+      />
+      <input type="number" id="income-amount" placeholder="Income Amount" />
+      <button type="submit">Add Income</button>
+    </form>
+
+    <form id="add-expense-form">
+      <input
+        type="text"
+        id="expense-description"
+        placeholder="Expense Description"
+      />
+      <input type="number" id="expense-amount" placeholder="Expense Amount" />
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <table id="budget-table">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Amount</th>
+          <th>Type</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="budget-table-body">
+        <!-- Budget items will be dynamically added here -->
+      </tbody>
+    </table>
+
+    <div id="total-income">Total Income: $0</div>
+    <div id="total-expense">Total Expense: $0</div>
+    <div id="balance">Balance: $0</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
